@@ -1,0 +1,19 @@
+.shop {
+  padding: 40px;
+  background-color: #f8f8f8;
+}
+
+.shop h2 {
+  font-size: 1.5rem;
+  margin: 40px 0 20px;
+  color: #111;
+  border-bottom: 2px solid #eaeaea;
+  padding-bottom: 6px;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: flex-start;
+}
