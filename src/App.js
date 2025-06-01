@@ -11,6 +11,8 @@ import Wholesale from "./pages/Wholesale";
 import Courses from "./pages/Courses";
 import Cart from "./pages/Cart";
 import Wishlist from "./pages/Wishlist";
+import ProductDetails from "./pages/ProductDetails";
+
 
 
 
@@ -28,6 +30,8 @@ function App() {
           <Route path="/courses" element={<Courses />} />
           <Route path="/wishlist" element={<Wishlist />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/product/:id" element={<ProductDetails />} />
+
         </Routes>
       </main>
         
