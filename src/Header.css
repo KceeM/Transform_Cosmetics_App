@@ -1,14 +1,18 @@
 .header {
   text-align: center;
-  padding: 20px 0;
+  padding: 16px 32px;
+  justify-content: space-between;
+  align-items: center;
   background-color: #fff;
   border-bottom: 1px solid #eee;
+  position: relative;
 }
 
 .logo-section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
 }
 
 .logo {
@@ -40,7 +44,31 @@
 }
 
 .nav-links a:hover {
-  color: #d16ba5;
+  color: #6bced1;
   background-color: #f7f7f7;
   border-radius: 6px;
+}
+
+.header-icons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.icon-link {
+  text-align: center;
+  color: #111;
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: transform 0.2s ease;
+}
+
+.icon-link img {
+  width: 24px;
+  height: 24px;
+}
+
+.icon-link:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }

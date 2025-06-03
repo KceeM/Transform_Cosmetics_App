@@ -1,0 +1,30 @@
+.header-icons {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  gap: 20px;
+}
+
+.icon-link {
+  text-align: center;
+  color: #111;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.icon-link img {
+  width: 28px;
+  height: 28px;
+}
+
+.icon-link span {
+  font-size: 12px;
+  display: block;
+  margin-top: 4px;
+}
+
+.icon-link:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}

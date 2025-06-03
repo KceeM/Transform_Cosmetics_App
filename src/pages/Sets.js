@@ -3,6 +3,9 @@ import sets from "../data/sets";
 import "./Sets.css";
 import SetModal from "../components/SetModal";
 import { useState } from "react";
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
+import heart from "../images/Icons/Heart1.png";
 
 
 function Sets() {
@@ -37,6 +40,8 @@ function Sets() {
 
   const [selectedSet, setSelectedSet] = useState(null);
 
+  const { addToCart, addToWishlist } = useContext(CartContext);
+
 
   const renderSetSection = (title, data) => (
     <section className="set-section">
@@ -44,6 +49,9 @@ function Sets() {
         <div className="set-grid">
          {data.map(set => (
             <div className="set-card" key={set.id}>
+                <div className="wishlist-icon" onClick={() => addToWishlist(set)}>
+                   <img src={heart} alt="wishlist" />
+                </div>
                 <div className="set-image-wrapper">
                   <img src={set.image} alt={set.name} />
                    <div className="hover-details">
@@ -59,7 +67,7 @@ function Sets() {
                <p className="set-price">R{set.price}</p>
                <div className="set-buttons">
                   <button className="view-info" onClick={() => setSelectedSet(set)}>View Info</button>
-                  <button>Add to Cart</button>
+                  <button onClick={() => addToCart(set)}>Add to Cart</button>
                 </div>
            </div>
 
