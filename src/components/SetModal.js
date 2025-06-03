@@ -15,8 +15,12 @@ function SetModal({ setData, onClose }) {
             <li key={idx}>{step}</li>
           ))}
         </ul>
-        <h4>Bentonite Clay Mask Instructions:</h4>
-        <p>{setData.details?.maskUsage}</p>
+        {setData.details?.maskUsage && (
+            <>
+              <h4>Bentonite Clay Mask Instructions:</h4>
+              <p>{setData.details.maskUsage}</p>
+           </>
+        )}
         <button onClick={onClose} className="close-btn">Close</button>
       </div>
     </div>

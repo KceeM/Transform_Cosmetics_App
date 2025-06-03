@@ -8,30 +8,31 @@ import { useState } from "react";
 function Sets() {
   // this groups sets by keywords
   const acneGlowSets = sets.filter(set =>
-    set.concern.toLowerCase().includes("acne") ||
-    set.concern.toLowerCase().includes("clarifying") ||
-    set.concern.toLowerCase().includes("glow")
+    set.concern === "Acne Repair, Skin Clarifying & Glow"
   );
 
   const evenGlowSets = sets.filter(set =>
-    set.concern.toLowerCase().includes("even skin")
+    set.concern === "Glow Enhancing & Even Skin"
   );
 
   const moistureBodySets = sets.filter(set =>
-    set.concern.toLowerCase().includes("moisture") &&
-    set.concern.toLowerCase().includes("body")
+    set.concern === "Moisture Care – Body Butters and Oils"
+  );
+
+  const fullBodyKits = sets.filter(set =>
+    set.concern === "Full Body Kits"
   );
 
   const hairGrowthSets = sets.filter(set =>
-    set.concern.toLowerCase().includes("hair growth")
+    set.concern === "Hair Growth & Damage Repair"
   );
 
   const fullHairRegimen = sets.filter(set =>
-    set.concern.toLowerCase().includes("full regimen")
+    set.concern === "Full Hair Care Regimen"
   );
 
   const hairStylingSets = sets.filter(set =>
-    set.concern.toLowerCase().includes("styling")
+    set.concern === "Styling & Moisture Care"
   );
 
   const [selectedSet, setSelectedSet] = useState(null);
@@ -72,9 +73,10 @@ function Sets() {
       {renderSetSection("1. Acne Repair, Skin Clarifying & Glow", acneGlowSets)}
       {renderSetSection("2. Glow Enhancing & Even Skin", evenGlowSets)}
       {renderSetSection("3. Moisture Care – Body Butters and Oils", moistureBodySets)}
-      {renderSetSection("4. Hair Growth & Damage Repair", hairGrowthSets)}
-      {renderSetSection("5. Full Hair Care Regimen", fullHairRegimen)}
-      {renderSetSection("6. Styling & Moisture Care", hairStylingSets)}
+      {renderSetSection("4.Full Body Kits", fullBodyKits)}
+      {renderSetSection("5. Hair Growth & Damage Repair", hairGrowthSets)}
+      {renderSetSection("6. Full Hair Care Regimen", fullHairRegimen)}
+      {renderSetSection("7. Styling & Moisture Care", hairStylingSets)}
       {selectedSet && <SetModal setData={selectedSet} onClose={() => setSelectedSet(null)} />}
 
     </div>
