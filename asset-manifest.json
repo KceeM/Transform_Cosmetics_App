@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Transform_Cosmetics_App/static/css/main.d872aa1c.css",
-    "main.js": "/Transform_Cosmetics_App/static/js/main.27017e30.js",
+    "main.js": "/Transform_Cosmetics_App/static/js/main.91e4a035.js",
     "static/media/2.png": "/Transform_Cosmetics_App/static/media/2.3f4210e4f6f70eed71fe.png",
     "static/media/1.png": "/Transform_Cosmetics_App/static/media/1.4207f5b30538a13b4b41.png",
     "static/media/3.png": "/Transform_Cosmetics_App/static/media/3.d089acdc772075ba3ecd.png",
@@ -61,10 +61,10 @@
     "static/media/A4.png": "/Transform_Cosmetics_App/static/media/A4.9b1e33d0038a86043d38.png",
     "index.html": "/Transform_Cosmetics_App/index.html",
     "main.d872aa1c.css.map": "/Transform_Cosmetics_App/static/css/main.d872aa1c.css.map",
-    "main.27017e30.js.map": "/Transform_Cosmetics_App/static/js/main.27017e30.js.map"
+    "main.91e4a035.js.map": "/Transform_Cosmetics_App/static/js/main.91e4a035.js.map"
   },
   "entrypoints": [
     "static/css/main.d872aa1c.css",
-    "static/js/main.27017e30.js"
+    "static/js/main.91e4a035.js"
   ]
 }
