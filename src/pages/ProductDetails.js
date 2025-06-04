@@ -3,12 +3,15 @@ import { useParams } from "react-router-dom";
 import products from "../data/products";
 import "./ProductDetails.css";
 import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
 
 
 function ProductDetails() {
   const { id } = useParams();
   const product = products.find((p) => p.id === id);
   const navigate = useNavigate();
+  const { addToCart } = useContext(CartContext);
 
 
   if (!product) {
@@ -34,7 +37,7 @@ function ProductDetails() {
         <h4>How to Use:</h4>
         <p>{product.usage}</p>
 
-        <button>Add to Cart</button>
+        <button onClick={() => addToCart(product)}>Add to Cart</button>
 
         <button className="back-button" onClick={() => navigate("/")}>
           ← Back to Shop

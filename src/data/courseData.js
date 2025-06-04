@@ -8,7 +8,7 @@ const courseData = [
       {
         title: "Getting Started (Free)",
         description: "How to register, budget, and structure your business.",
-        url: "videos/start-business.mp4",
+        url: "https://youtu.be/xJ71lGDtSt4?si=up5dWKAH-OdAdzjr",
         thumbnail: "images/thumbnails/start.jpg",
         locked: false
       },

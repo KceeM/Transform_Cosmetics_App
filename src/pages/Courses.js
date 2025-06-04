@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import "./Courses.css";
 import courseData from "../data/courseData";
+import VideoModal from "../components/VideoModal";
 
 function Courses() {
   const [selectedCategory, setSelectedCategory] = useState(null);
+  const [selectedVideo, setSelectedVideo] = useState(null);
 
   return (
     <div className="courses-page">
@@ -36,18 +38,28 @@ function Courses() {
                     <p>Locked - Pay R550</p>
                   </div>
                 ) : (
-                  <video width="100%" controls poster={video.thumbnail}>
-                    <source src={video.url} type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
+                  <div
+                    className="video-thumbnail"
+                    onClick={() => setSelectedVideo(video)}
+                    style={{ cursor: "pointer" }}
+                  >
+                    <img src={video.thumbnail} alt={video.title} />
+                    <div className="play-overlay">▶</div>
+                 </div>
                 )}
                 <h4>{video.title}</h4>
                 <p>{video.description}</p>
+                
               </div>
             ))}
           </div>
         </div>
       )}
+
+      {selectedVideo && (
+        <VideoModal video={selectedVideo} onClose={() => setSelectedVideo(null)} />
+      )}
+      
     </div>
   );
 }

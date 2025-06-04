@@ -13,6 +13,7 @@ const sets = [
       "Rose Water Toner 200ml"
     ],
     concern: "Acne Repair, Skin Clarifying & Glow",
+    quizConcern: ["acne", "actives", "glow"],
     details: {
      routine: [
          "Cleanse with Activated Charcoal Soap to remove impurities.",
@@ -25,7 +26,7 @@ const sets = [
   },
   {
     id: "set2",
-    name: "Glow & Acne Repair Set (with Black Soap Cleanser)",
+    name: "Glow & Acne Repair Set (with African Black Soap Cleanser)",
     price: 430,
     image: require("../images/SetCollection/2.png"),
     description: "Same glow-boosting formula, now with African Black Soap Cleanser for a more effective touch.",
@@ -37,6 +38,7 @@ const sets = [
       "Rose Water Toner 200ml"
     ],
     concern: "Acne Repair, Skin Clarifying & Glow",
+    quizConcern: ["acne", "actives", "glow"],
     details: {
      routine: [
          "Cleanse your face using the African Black Soap Cleanser. It deeply cleans and helps clear acne while remaining gentle on the skin.",
@@ -61,6 +63,7 @@ const sets = [
       "Rose Water Toner 200ml"
     ],
     concern: "Acne Repair, Skin Clarifying & Glow",
+    quizConcern: ["acne", "glow" , "no-actives"],
     details: {
         routine: [
           "Cleanse your skin with the African Black Soap Cleanser — gentle but effective for removing dirt and calming sensitive skin.",
@@ -85,6 +88,7 @@ const sets = [
       "Rose Water Toner 200ml"
     ],
     concern: "Acne Repair, Skin Clarifying & Glow",
+    quizConcern: ["acne", "glow" , "no-actives"],
     details: {
         routine: [
            "Begin by cleansing your face with Activated Charcoal Soap to draw out impurities and excess oil.",
@@ -109,6 +113,7 @@ const sets = [
       "Rose Water Toner 200ml"
     ],
     concern: "Acne Repair, Skin Clarifying & Glow",
+    quizConcern: ["acne", "sensitive", "no-actives"],
     details: {
       routine: [
           "Cleanse your face using the Activated Charcoal Soap — gentle enough for sensitive skin and effective at detoxing.",
@@ -133,6 +138,7 @@ const sets = [
       "Rose Water Toner 200ml"
    ],
    concern: "Glow Enhancing & Even Skin",
+   quizConcern: ["even-tone", "glow" , "darkspots", "hyperpigmentation", "brightening", "actives"],
    details: {
      routine: [
            "Cleanse with Kojic Acid Papaya Turmeric Soap to exfoliate and brighten.",
@@ -158,6 +164,7 @@ const sets = [
       "Rose Water Toner 200ml"
     ],
     concern: "Glow Enhancing & Even Skin",
+    quizConcern: ["even-tone", "glow" , "darkspots", "hyperpigmentation", "actives"],
     details: {
       routine: [
           "Cleanse with Papaya Turmeric Soap to brighten and smooth.",
@@ -183,6 +190,7 @@ const sets = [
       "Rose Water Toner 200ml"
    ],
     concern: "Glow Enhancing & Even Skin",
+    quizConcern: ["even-tone", "glow" , "darkspots", "hyperpigmentation", "actives"],
     details: {
       routine: [
           "Use Lemon Soap for a clean, bright base.",
@@ -207,6 +215,7 @@ const sets = [
       "Papaya Turmeric Facial Oil 50ml"
     ],
     concern: "Glow Enhancing & Even Skin",
+    quizConcern: ["even-tone", "glow" , "darkspots", "hyperpigmentation", "no-toner", "brightening", "actives"],
     details: {
       routine: [
           "Cleanse with Kojic Papaya Turmeric Soap.",
@@ -230,6 +239,7 @@ const sets = [
        "Papaya Turmeric Facial Oil 50ml"
     ],
     concern: "Glow Enhancing & Even Skin",
+    quizConcern: ["even-tone", "glow" , "darkspots", "hyperpigmentation", "no-toner", "actives"],
     details: {
       routine: [
           "Wash face with Papaya Turmeric Soap.",
@@ -253,6 +263,7 @@ const sets = [
       "Papaya Turmeric Facial Oil 50ml"
     ],
     concern: "Glow Enhancing & Even Skin",
+    quizConcern: ["even-tone", "glow" , "darkspots", "hyperpigmentation", "no-toner", "actives"],
     details: {
       routine: [
           "Cleanse with Lemon Soap.",
@@ -277,6 +288,7 @@ const sets = [
        "Rose Water Toner 200ml"
     ],
     concern: "Glow Enhancing & Even Skin",
+    quizConcern: ["even-tone", "glow" , "darkspots", "hyperpigmentation", "no-toner", "actives"],
     etails: {
       routine: [
           "Cleanse with Kojic Papaya Soap.",
@@ -301,6 +313,7 @@ const sets = [
       "Papaya Turmeric Facial Oil 50ml"
     ],
     concern: "Glow Enhancing & Even Skin",
+    quizConcern: ["even-tone", "glow" , "darkspots", "hyperpigmentation", "no-toner", "no-actives"],
     details: {
       routine: [
           "Cleanse with Papaya Soap.",
@@ -324,6 +337,7 @@ const sets = [
       "Papaya Turmeric Facial Oil 50ml"
     ],
     concern: "Glow Enhancing & Even Skin",
+    quizConcern: ["even-tone", "glow" , "darkspots", "hyperpigmentation", "no-toner", "no-actives"],
     details: {
       routine: [
           "Cleanse with Lemon Soap.",
@@ -511,6 +525,7 @@ const sets = [
       "Pure Chebe Powder 100g"
     ],
   concern: "Hair Growth & Damage Repair",
+  quizConcern: ["growth", "breakage" , "moisture", "damage"],
   details: {
     routine: [
       "Use Chebe Hair Butter 2–4 times weekly to moisturize and protect strands.",
@@ -532,6 +547,7 @@ const sets = [
       "Chebe Hair Butter 100g"
     ],
   concern: "Hair Growth & Damage Repair",
+  quizConcern: ["growth", "breakage" , "moisture", "damaged"],
   details: {
       routine: [
          "Massage Castor Oil into the scalp and edges 2–3x per week.",
@@ -552,6 +568,7 @@ const sets = [
       "Pure Chebe Powder 100g"
    ],
   concern: "Hair Growth & Damage Repair",
+  quizConcern: ["growth", "breakage", "damgaged"],
   details: {
       routine: [
           "Use Castor Oil directly on scalp for stimulation and nourishment.",
@@ -576,6 +593,7 @@ const sets = [
       "Curl Activator Lotion 300ml"
    ],
   concern: "Full Hair Care Regimen",
+  quizConcern: ["growth", "breakage" , "moisture" , "washday", "styling", "damaged"],
   details: {
       routine: [
           "Cleanse with Rosemary Shampoo to refresh scalp and stimulate growth.",
@@ -603,6 +621,7 @@ const sets = [
       "Jamaican Black Castor Oil 100ml"
    ],
   concern: "Full Hair Care Regimen",
+  quizConcern: ["growth", "breakage" , "moisture", "washday"],
   details: {
       routine: [
           "Cleanse with Rosemary Shampoo and follow with the Conditioner.",
@@ -625,6 +644,7 @@ const sets = [
       "Rosemary Conditioner 300ml"
    ],
   concern: "Full Hair Care Regimen",
+  quizConcern: ["washday"],
   details: {
       routine: [
           "Lather with Rosemary Shampoo to cleanse and stimulate the scalp.",
@@ -644,6 +664,7 @@ const sets = [
       "Curl Activator Lotion 300ml"
    ],
   concern: "Styling & Moisture Care",
+  quizConcern: ["styling", "moisture"],
   details: {
       routine: [
           "Apply Coconut Curling Cream to damp hair to define and moisturize curls.",
@@ -667,6 +688,7 @@ const sets = [
       "Chebe Hair Butter 100g"
    ],
   concern: "Styling & Moisture Care",
+  quizConcern: ["styling", "moisture" , "growth" , "breakage" , "damage"],
   details: {
       routine: [
            "Apply Curling Cream on clean, damp hair for hydration and shape.",

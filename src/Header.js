@@ -5,10 +5,12 @@ import cartIcon from "./images/Icons/Cart1.png";
 import heartIcon from "./images/Icons/Heart1.png";
 import "./Header.css"; 
 import HeaderIcons from "./components/HeaderIcons";
+import SearchBar from "./components/SearchBar";
 
 function Header() {
   return (
     <header className="header">
+      <SearchBar /> {/* Top-left search bar*/}
       <div className="logo-section">
         <img src={logo} alt="Transform Cosmetics Logo" className="logo" />
         <h1 className="brand-name">Transform Cosmetics</h1>

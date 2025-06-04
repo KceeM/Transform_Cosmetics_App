@@ -1,0 +1,135 @@
+.wholesale-page {
+  padding: 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.wholesale-intro {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.wholesale-intro h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.wholesale-products,
+.private-labeling {
+  margin-bottom: 3rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.wholesale-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.wholesale-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.image-container:hover {
+  transform: scale(1.02);
+  border: 1px solid #ccc;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  border-radius: 6px;
+}
+
+.hover-label {
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  font-size: 0.75rem;
+  padding: 3px 6px;
+  border-radius: 3px;
+  display: none;
+}
+
+.image-container:hover .hover-label {
+  display: block;
+}
+
+
+.wholesale-card img {
+  width: 100%;
+  max-height: 240px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  border-radius: 6px;
+}
+
+.wholesale-card:hover img {
+  transform: scale(1.08);
+  cursor: zoom-in;
+}
+
+
+.wholesale-card h3 {
+  margin: 0.5rem 0;
+}
+
+.wholesale-price {
+  font-weight: bold;
+  color: #111;
+  margin: 0.5rem 0;
+}
+
+.wholesale-card button {
+  background-color: #111;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.wholesale-card button:hover,
+.inquiry-btn:hover {
+  background-color: #333;
+}
+
+.private-labeling ul {
+  margin: 1rem 0;
+  padding-left: 1.2rem;
+  list-style: disc;
+}
+
+.inquiry-btn {
+  background-color: #111;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}

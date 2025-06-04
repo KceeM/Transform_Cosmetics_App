@@ -370,7 +370,7 @@ const products = [
     usage: "Mix 1–2 teaspoons with water, rose water, or apple cider vinegar to form a paste. Apply evenly to clean skin. Let dry for 10–15 minutes, then rinse off gently. Use 1–2 times per week."
   },
   {
-    id: "23",
+    id: "24",
     name: "Alpha Arbutin & Vitamin C Face Butter 50 ml",
     category: "Bestseller",
     price: 220,  

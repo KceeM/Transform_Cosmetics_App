@@ -2,10 +2,14 @@ import './App.css';
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Header from "./Header";
+import SearchResults from "./pages/SearchResults";
 import About from "./pages/About";
 import Shop from "./pages/Shop";
 import Sets from "./pages/Sets";
-import Quiz from "./pages/Quiz";
+import QuizIntro from "./pages/QuizIntro";
+import SkinQuiz from "./pages/SkinQuiz";
+import HairQuiz from "./pages/HairQuiz";
+import QuizResult from "./pages/QuizResult";
 import Wholesale from "./pages/Wholesale";
 import Courses from "./pages/Courses";
 import Cart from "./pages/Cart";
@@ -25,9 +29,13 @@ function App() {
           <Route path="/" element={<Shop />} />
           <Route path="/about" element={<About />} />
           <Route path="/sets" element={<Sets />} />
-          <Route path="/quiz" element={<Quiz />} />
+          <Route path="/quiz" element={<QuizIntro />} />
+          <Route path="/quiz/skin" element={<SkinQuiz />} />
+          <Route path="/quiz/hair" element={<HairQuiz />} />
+          <Route path="/quiz/result" element={<QuizResult />} />
           <Route path="/wholesale" element={<Wholesale />} />
           <Route path="/courses" element={<Courses />} />
+          <Route path="/search" element={<SearchResults />} />
           <Route path="/wishlist" element={<Wishlist />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/product/:id" element={<ProductDetails />} />

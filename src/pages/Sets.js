@@ -6,6 +6,7 @@ import { useState } from "react";
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import heart from "../images/Icons/Heart1.png";
+import SetCard from "../components/SetCard";
 
 
 function Sets() {
@@ -45,35 +46,17 @@ function Sets() {
 
   const renderSetSection = (title, data) => (
     <section className="set-section">
-      <h2>{title}</h2>
-        <div className="set-grid">
+       <h2>{title}</h2>
+       <div className="set-grid">
          {data.map(set => (
-            <div className="set-card" key={set.id}>
-                <div className="wishlist-icon" onClick={() => addToWishlist(set)}>
-                   <img src={heart} alt="wishlist" />
-                </div>
-                <div className="set-image-wrapper">
-                  <img src={set.image} alt={set.name} />
-                   <div className="hover-details">
-                       <ul>
-                         {set.includes.map((item, idx) => (
-                         <li key={idx}>{item}</li>
-                         ))}
-                       </ul>
-                   </div>
-               </div>
-               <h3>{set.name}</h3>
-               <p>{set.description}</p>
-               <p className="set-price">R{set.price}</p>
-               <div className="set-buttons">
-                  <button className="view-info" onClick={() => setSelectedSet(set)}>View Info</button>
-                  <button onClick={() => addToCart(set)}>Add to Cart</button>
-                </div>
-           </div>
-
-          ))}
-        </div>
-    </section>
+          <SetCard
+            key={set.id}
+            set={set}
+            onViewInfo={() => setSelectedSet(set)}
+        />
+      ))}
+    </div>
+  </section>
   );
 
   return (

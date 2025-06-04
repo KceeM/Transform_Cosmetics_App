@@ -7,6 +7,7 @@
   text-align: center;
   transition: box-shadow 0.3s ease;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.03);
+  position: relative;
 }
 
 .product-card:hover {
@@ -73,10 +74,5 @@
 .wishlist-icon img {
   width: 100%;
   height: auto;
-}
-
-.product-card {
-  position: relative;
-  /* other styles... */
 }
 
