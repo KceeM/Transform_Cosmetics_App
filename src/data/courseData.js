@@ -8,9 +8,10 @@ const courseData = [
       {
         title: "Getting Started (Free)",
         description: "How to register, budget, and structure your business.",
-        url: "../images/vids/GettingStarted-Business.mp4",
-        thumbnail: "/vids/learninghubintro.png",
-        locked: false
+        url: "https://drive.google.com/file/d/183trOcs0ERSS2fyqH4nJdrz7tOicZIYp/preview",
+        thumbnail: "./images/vids/learninghubintro.png",
+        locked: false,
+        isDrive: true
       },
       { title: "Business Plan Guide", description: "Step-by-step plan structure.", locked: true },
       { title: "Sourcing Materials", description: "Find reliable suppliers.", locked: true },
