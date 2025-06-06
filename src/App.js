@@ -3,6 +3,7 @@ import React from "react";
 import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Header from "./Header";
 import SearchResults from "./pages/SearchResults";
+import HomePage from "./pages/HomePage";
 import About from "./pages/About";
 import Shop from "./pages/Shop";
 import Sets from "./pages/Sets";
@@ -26,7 +27,8 @@ function App() {
       <Header />
       <main>
         <Routes>
-          <Route path="/" element={<Shop />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/shop" element={<Shop />} />
           <Route path="/about" element={<About />} />
           <Route path="/sets" element={<Sets />} />
           <Route path="/quiz" element={<QuizIntro />} />

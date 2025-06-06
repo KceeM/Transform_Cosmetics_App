@@ -9,19 +9,22 @@ function SetModal({ setData, onClose }) {
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <h2>{setData.name}</h2>
         <p><strong>Description:</strong> {setData.description}</p>
-        <h4>Routine:</h4>
-        <ul>
-          {setData.details?.routine.map((step, idx) => (
-            <li key={idx}>{step}</li>
-          ))}
-        </ul>
+        <div className="modal-section">
+           <h4>Routine:</h4>
+           <ul>
+              {setData.details?.routine.map((step, idx) => (
+                <li key={idx}>{step}</li>
+              ))}
+            </ul>
+        </div>
         {setData.details?.maskUsage && (
-            <>
+            <div className="modal-section">
               <h4>Bentonite Clay Mask Instructions:</h4>
               <p>{setData.details.maskUsage}</p>
-           </>
+              
+           </div>
         )}
-        <button onClick={onClose} className="close-btn">Close</button>
+        <button className="close-btnn" onClick={onClose}>×</button>
       </div>
     </div>
   );

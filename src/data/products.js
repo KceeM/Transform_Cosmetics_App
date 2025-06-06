@@ -354,6 +354,7 @@ const products = [
     usage: "Apply evenly to damp hair from root to tip. Scrunch upward to encourage curl formation. Let air dry or diffuse. Refresh curls daily as needed."
   },
 
+
   {
     id: "23",
     name: "Bentonite Clay Powder 250g",
@@ -383,6 +384,86 @@ const products = [
       "Brightens dull skin for a more even complexion"
     ],
     usage: "Use as the final step in your skincare routine. Massage a small amount onto cleansed face and neck. Use day and night. Always follow with SPF during the day." 
+  },
+
+  {
+    id: "25",
+    name: "Papaya Turmeric Soap 115g",
+    category: "Bestseller",
+    price: 220,  
+    image: require("../images/products/2.png"),
+    description: "A brightening bar soap made with a blend of Papaya and Turmeric to gently cleanse, even skin tone, and boost radiance. Perfect for daily use on face and body to fade dark marks and bring out your natural glow.",
+    benefits: [
+      "Brightens skin and fades hyperpigmentation",
+      "Gently exfoliates and smooths texture",
+      "Cleanses without stripping moisture",
+      "Ideal for dull, uneven, or blemish-prone skin"
+    ],
+    usage: "Lather soap with water and apply to damp skin. Gently massage in circular motions, then rinse thoroughly. Use daily on face and/or body for best results."
+  },
+
+  {
+    id: "26",
+    name: "Papaya Turmeric Facial Oil 50 ml",
+    category: "Bestseller",
+    price: 220,  
+    image: require("../images/products/34.png"),
+    description: "A glow-boosting facial oil powered by Papaya enzymes and Turmeric extract to help improve skin tone, texture, and clarity. Ideal for dull, pigmented, or acne-scarred skin.",
+    benefits: [
+      "Gently fades dark spots and hyperpigmentation",
+      "Revives dull skin with a natural glow",
+      "Balances oil production and smooths texture",
+      "Lightweight, non-comedogenic formula"
+    ],
+    usage: "Use after cleansing and toning. Apply 2–3 drops to fingertips and gently press into skin. Follow with moisturizer. Suitable for daily use."
+  },
+
+  {
+    id: "27",
+    name: "Papaya Turmeric Body Oil 200ml",
+    category: "Bestseller",
+    price: 220,  
+    image: require("../images/products/31.png"),
+    description: "A lightweight, non-greasy body oil formulated with Papaya and Turmeric to help brighten, even out skin tone, and restore a natural glow. Perfect for dull, uneven, or textured skin.",
+    benefits: [
+      "Brightens and evens skin tone naturally",
+      "Fades blemishes and dark spots",
+      "Improves skin texture and smoothness",
+      "Locks in moisture for a radiant, healthy finish"
+    ],
+    usage: "Apply daily to damp skin after showering. Massage in circular motions until fully absorbed. Use consistently for best results."
+  },
+
+  {
+    id: "28",
+    name: "Activated Charcoal Soap 115g",
+    category: "Bestseller",
+    price: 220,  
+    image: require("../images/products/1.png"),
+    description: "A purifying bar soap formulated with activated charcoal to deeply cleanse, absorb excess oil, and detoxify the skin. Perfect for blemish-prone, oily, or congested skin on the face and body.",
+    benefits: [
+      "Draws out impurities and toxins",
+      "Reduces acne and clogged pores",
+      "Controls excess oil and shine",
+      "Leaves skin feeling clean, balanced, and refreshed"
+    ],
+    usage: "Lather the soap between hands or with a sponge. Gently massage onto damp face or body in circular motions. Rinse thoroughly. Use 2–3 times a week or as needed."
+  },
+
+  {
+    id: "29",
+    name: "Turmeric Face Butter - Pink 50ml",
+    category: "Bestseller",
+    price: 220,  
+    image: require("../images/products/12.png"),
+    description: "A gentle yet powerful face butter infused with Turmeric to help brighten, calm, and deeply moisturize the skin. Designed to improve skin clarity and texture while fading dark marks.",
+    benefits: [
+      "Visibly fades hyperpigmentation and dark spots",
+      "Boosts skin glow and radiance",
+      "Nourishes dry or flaky skin without clogging pores",
+      "Soothes irritation and redness with natural anti-inflammatory properties"
+    ],
+    usage: "Apply a small amount to clean skin as the final step in your skincare routine. Use day and night. For daytime use, follow with SPF."
   },
 ];
 

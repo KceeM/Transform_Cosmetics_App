@@ -3,10 +3,14 @@ import "./Wholesale.css";
 import { CartContext } from "../context/CartContext";
 import wholesaleProducts from "../data/wholesale";
 import ImageModal from "../components/ImageModal"; 
+import InquiryModal from "../components/InquiryModal";
+
 
 function Wholesale() {
   const { addToCart } = useContext(CartContext);
   const [selectedImage, setSelectedImage] = useState(null);
+  const [showInquiry, setShowInquiry] = useState(false);
+
 
   return (
     <div className="wholesale-page">
@@ -14,8 +18,8 @@ function Wholesale() {
       <section className="wholesale-intro">
         <h1>Partner with Transform Cosmetics</h1>
         <p>
-          Are you a small business owner looking to expand your product range with high-quality, ready-made skincare and haircare?
-          Our wholesale and private labeling options give you everything you need to succeed — from premium bulk formulas to fully customizable branding.
+          Are you a small business owner looking to expand your product range with high-quality, ready - made skincare and haircare?
+          Our wholesale and private labeling options give you everything you need to succeed  -  from premium bulk formulas to fully customizable branding.
         </p>
       </section>
 
@@ -45,7 +49,7 @@ function Wholesale() {
         <h2>Private Labeling Options</h2>
         <p>
           Want to sell your own brand without the hassle of manufacturing?
-          Our private label service allows you to order high-performing products in batches of 12–24 with your own label. We handle production — you focus on branding.
+          Our private label service allows you to order high-performing products in batches of 12-24 with your own label. We handle production  -  you focus on branding.
         </p>
 
         <div className="private-label-info">
@@ -55,12 +59,18 @@ function Wholesale() {
             <li>✓ Minimum order: 12 units per product</li>
             <li>✓ Perfect for growing brands, spas, markets, and gift boxes</li>
           </ul>
-          <button className="inquiry-btn">Inquire Now</button>
+          <button className="inquiry-btn" onClick={() => setShowInquiry(true)}>
+            Inquire Now
+          </button>
+
         </div>
       </section>
 
       {/* Modal */}
       {selectedImage && <ImageModal image={selectedImage} onClose={() => setSelectedImage(null)} />}
+
+      {showInquiry && <InquiryModal onClose={() => setShowInquiry(false)} />}
+
     </div>
   );
 }

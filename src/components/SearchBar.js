@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./SearchBar.css";
+import logo from '../images/Icons/s4.png'; //
 
 function SearchBar() {
   const [query, setQuery] = useState("");
@@ -21,7 +22,9 @@ function SearchBar() {
         value={query}
         onChange={(e) => setQuery(e.target.value)}
       />
-      <button type="submit">🔍</button>
+      <button type="submit">
+        <img src={logo} alt="search" className="search-icon" />
+      </button>
     </form>
   );
 }

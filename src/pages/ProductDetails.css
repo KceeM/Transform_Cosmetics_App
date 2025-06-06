@@ -48,7 +48,9 @@ button {
 }
 
 button:hover {
-  background-color: #444;
+  background-color: #646464;
+  transform: scale(1.1);
+  border: 3px solid #ebd01f;
 }
 
 .back-button {

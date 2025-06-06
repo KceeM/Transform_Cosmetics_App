@@ -10,14 +10,16 @@ import SearchBar from "./components/SearchBar";
 function Header() {
   return (
     <header className="header">
-      <SearchBar /> {/* Top-left search bar*/}
+      <SearchBar /> 
       <div className="logo-section">
-        <img src={logo} alt="Transform Cosmetics Logo" className="logo" />
+        <Link to ="/">
+          <img src={logo} alt="Transform Cosmetics Logo" className="logo" />
+        </Link>
         <h1 className="brand-name">Transform Cosmetics</h1>
       </div>
 
       <nav className="nav-links">
-        <Link to="/">Shop</Link>
+        <Link to="/shop">Shop</Link>
         <Link to="/about">About</Link>
         <Link to="/sets">Sets</Link>
         <Link to="/quiz">Quiz</Link>

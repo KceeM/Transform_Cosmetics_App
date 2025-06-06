@@ -1,4 +1,4 @@
-.modal-overlay {
+.modal-overlayy {
   position: fixed;
   top: 0;
   left: 0;
@@ -11,7 +11,7 @@
   z-index: 1000;
 }
 
-.modal-content {
+.modal-contentt {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
@@ -25,18 +25,18 @@
   box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
 
-.modal-content img {
+.modal-contentt img {
   max-width: 100%;
   max-height: 65vh;
   object-fit: contain;
   border-radius: 6px;
 }
 
-.close-btn {
+.close-btnn {
   position: absolute;
-  top: -12px;
-  right: -12px;
-  background: #fff;
+  top: 5px;
+  right: 6px;
+  background: #d3d2d2;
   color: #333;
   border: none;
   border-radius: 50%;
@@ -54,7 +54,7 @@
   line-height: 1;
 }
 
-.close-btn:hover {
+.close-btnn:hover {
   background-color: #f0f0f0;
 }
 

@@ -22,18 +22,18 @@ function About() {
         <div className="about-content">
           <h2>Welcome to Transform Cosmetics</h2>
           <p>
-            Transform Cosmetics was born from a personal journey — a quest to create honest, effective
+            Transform Cosmetics was born from a personal journey  -  a quest to create honest, effective
             skincare and haircare products using natural, safe ingredients. It all started in a small home lab,
             where experiments turned into real results. Fueled by curiosity and a passion for clean beauty,
             I began crafting products for friends and family. Word spread, and Transform Cosmetics was born.
           </p>
           <p>
             Every product is handmade in small batches, using ethically sourced oils, clays, actives, and butters.
-            We focus on performance, transparency, and transformation — whether it's clearing acne, boosting glow,
+            We focus on performance, transparency, and transformation  -  whether it's clearing acne, boosting glow,
             or nurturing your curls.
           </p>
           <p>
-            Today, Transform Cosmetics is more than just a brand — it's a community for anyone who wants
+            Today, Transform Cosmetics is more than just a brand  -  it's a community for anyone who wants
             to love their skin naturally. We believe in affordable luxury, conscious beauty, and glowing results.
           </p>
         </div>

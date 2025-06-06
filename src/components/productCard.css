@@ -37,7 +37,8 @@
 .product-card .buttons {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
+ 
 }
 
 .product-card button,
@@ -50,11 +51,14 @@
   cursor: pointer;
   font-size: 0.95rem;
   transition: background-color 0.3s ease;
+  margin-bottom: 20px;
 }
 
 .product-card button:hover,
 .product-card .view-btn:hover {
-  background-color: #555;
+  background-color: #646464;
+  transform: scale(1.1);
+  border: 3px solid #ebd01f;
 }
 
 .wishlist-icon {

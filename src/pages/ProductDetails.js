@@ -39,7 +39,7 @@ function ProductDetails() {
 
         <button onClick={() => addToCart(product)}>Add to Cart</button>
 
-        <button className="back-button" onClick={() => navigate("/")}>
+        <button className="back-button" onClick={() => navigate("/shop")}>
           ← Back to Shop
         </button>
 

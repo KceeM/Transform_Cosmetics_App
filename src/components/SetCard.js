@@ -4,7 +4,7 @@ import heart from "../images/Icons/Heart1.png";
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 
-function SetCard({ set, onViewInfo }) {
+function SetCard({ set, onViewInfo, }) {
   const { addToCart, addToWishlist } = useContext(CartContext);
 
   return (

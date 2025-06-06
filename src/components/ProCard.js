@@ -17,8 +17,13 @@ function ProductCard({ product }) {
       <img src={product.image} alt={product.name} />
       <h3>{product.name}</h3>
       <p>R{product.price}</p>
-      <div className="buttons">
+      <div className="button">
         <button onClick={() => addToCart(product)}>Add to Cart</button>
+        
+      </div>
+      
+      <div className="button">
+        
         <Link to={`/product/${product.id}`}>
           <button className="view-btn">View Details</button>
         </Link>
