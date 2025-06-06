@@ -9,7 +9,7 @@ const courseData = [
         title: "Getting Started (Free)",
         description: "How to register, budget, and structure your business.",
         url: "https://drive.google.com/file/d/183trOcs0ERSS2fyqH4nJdrz7tOicZIYp/preview",
-        thumbnail: "./images/vids/learninghubintro.png",
+        thumbnail: require( "../images/vids/learninghubintro.png"),
         locked: false,
         isDrive: true
       },
@@ -28,9 +28,10 @@ const courseData = [
       {
         title: "Intro to Emulsions (Free)",
         description: "Understanding oil + water blends.",
-        url: "videos/emulsions-intro.mp4",
-        thumbnail: "images/thumbnails/emulsion.jpg",
-        locked: false
+        url: "",
+        thumbnail: require( "../images/vids/thumb1.png"),
+        locked: false,
+        
       },
       { title: "Equipment Needed", description: "Tools for safe production.", locked: true },
       { title: "Formulation Basics", description: "Start with simple formulas.", locked: true },
@@ -47,8 +48,8 @@ const courseData = [
       {
         title: "Oil Blending Basics (Free)",
         description: "Simple oil combinations for all skin types.",
-        url: "videos/body-oils.mp4",
-        thumbnail: "images/thumbnails/oils.jpg",
+        url: "",
+        thumbnail: require( "../images/vids/thumb2.png"),
         locked: false
       },
       { title: "Carrier Oils 101", description: "Properties and uses.", locked: true },

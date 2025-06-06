@@ -12,6 +12,7 @@
 .wholesale-intro h1 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
+  
 }
 
 .wholesale-products,
@@ -132,4 +133,34 @@
   border-radius: 4px;
   border: none;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  
+.wholesale-page {
+  padding: 1rem;
+}
+
+.product-grid {
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.wholesale-card {
+  padding: 1rem;
+}
+
+.wholesale-card h3 {
+  font-size: 1rem;
+}
+
+.wholesale-price {
+  font-size: 0.9rem;
+}
+
+.wholesale-card button {
+  width: 100%;
+  font-size: 0.9rem;
+}
+
 }

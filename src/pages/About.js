@@ -67,8 +67,8 @@ function About() {
       <section className="about-mission">
         <h2>Why Choose Transform Cosmetics?</h2>
         <p>
-          We don’t just make products — we make experiences. Every formula is tested, refined, and
-          made with intention. Whether you're healing, glowing, or just starting out — we’re here
+          We don’t just make products  -  we make experiences. Every formula is tested, refined, and
+          made with intention. Whether you're healing, glowing, or just starting out  -  we’re here
           to help you transform.
         </p>
       </section>

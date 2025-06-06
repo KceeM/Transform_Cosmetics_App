@@ -1,11 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink , Link } from "react-router-dom";
 import logo from "./images/logo1.png"; 
 import cartIcon from "./images/Icons/Cart1.png";
 import heartIcon from "./images/Icons/Heart1.png";
 import "./Header.css"; 
 import HeaderIcons from "./components/HeaderIcons";
 import SearchBar from "./components/SearchBar";
+
+
 
 function Header() {
   return (
@@ -19,12 +21,12 @@ function Header() {
       </div>
 
       <nav className="nav-links">
-        <Link to="/shop">Shop</Link>
-        <Link to="/about">About</Link>
-        <Link to="/sets">Sets</Link>
-        <Link to="/quiz">Quiz</Link>
-        <Link to="/wholesale">Wholesale</Link>
-        <Link to="/courses">Courses</Link>
+        <NavLink to="/shop"className={({ isActive }) => isActive ? "active-link" : ""}>Shop</NavLink>
+        <NavLink to="/about"className={({ isActive }) => isActive ? "active-link" : ""}>About</NavLink>
+        <NavLink to="/sets"className={({ isActive }) => isActive ? "active-link" : ""}>Sets</NavLink>
+        <NavLink to="/quiz"className={({ isActive }) => isActive ? "active-link" : ""}>Quiz</NavLink>
+        <NavLink to="/wholesale"className={({ isActive }) => isActive ? "active-link" : ""}>Wholesale</NavLink>
+        <NavLink to="/courses"className={({ isActive }) => isActive ? "active-link" : ""}>Courses</NavLink>
       </nav>
 
       <div className="header-icons">

@@ -63,3 +63,29 @@
     transform: translateY(0);
   }
 }
+
+@media (max-width: 768px) {
+
+  .quiz-intro-page {
+    padding: 1rem;
+  }
+
+  .quiz-card {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+  }
+
+  .quiz-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .quiz-options {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+}
+

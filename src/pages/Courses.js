@@ -35,7 +35,8 @@ function Courses() {
               <div key={index} className={`video-card ${video.locked ? "locked" : ""}`}>
                 {video.locked ? (
                   <div className="video-overlay">
-                    <p>Locked - Pay R550</p>
+                    <p>Locked - Pay R550 <br></br> COMING SOON</p>
+                    
                   </div>
                 ) : (
                   <div

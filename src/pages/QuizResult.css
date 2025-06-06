@@ -52,3 +52,21 @@
   border-radius: 4px;
   margin-bottom: 0.5rem;
 }
+
+@media (max-width: 768px) {
+
+  .quiz-page,
+  .quiz-result {
+    padding: 1rem;
+  }
+
+  .set-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .set-card {
+    width: 90%;
+  }
+}
+

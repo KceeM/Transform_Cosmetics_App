@@ -90,3 +90,34 @@
 .continue-btn:hover {
   background-color: #f2f2f2;
 }
+
+@media (max-width: 768px) {
+
+  .cart-row,
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .cart-item img,
+  .cart-row img {
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 1rem;
+  }
+
+  .cart-summary {
+    text-align: center;
+  }
+
+  .checkout-btn,
+  .continue-btn {
+    display: block;
+    margin: 1rem auto;
+    width: 80%;
+    text-align: center;
+  }
+
+}
+
